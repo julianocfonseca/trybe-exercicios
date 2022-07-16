@@ -1,0 +1,35 @@
+.bgstyle {
+    background-color: lightsteelblue;
+}   
+
+h1 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 65px;
+    color: orange
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
+}
+
+body {
+    font-size: 16px;
+}
+
+li {
+    font-style: italic;
+    line-height: 40px;
+    text-align: center;
+}
+
+#yellow {
+    background-color: rgba(255, 255, 0, 0.808);
+}
+#red {
+    background-color: red;
+}
+#brown {
+    background-color: brown;
+}
