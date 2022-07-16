@@ -9,7 +9,9 @@
         }   
 
         h1 {
-            font-family:'Courier New', Courier, monospace
+            font-family:'Courier New', Courier, monospace;
+            font-size: 65px;
+            color: orange
         }
         
         p {
@@ -28,17 +30,27 @@
             text-align: center;
         }
 
+        #yellow {
+            background-color: rgba(255, 255, 0, 0.808);
+        }
+        #red {
+            background-color: red;
+        }
+        #brown {
+            background-color: brown;
+        }
+
     
     </style>
      
 </head>
 <body>
-    <h1 style="font-size: 65px;color: orange;" >Exercícios 3.2</h1>
+    <h1>Exercícios 3.2</h1>
     <p class="bgstyle">Qual é a sua cor favorita?</p>
-    <ul class="bgstyle" >
-      <li style="background-color: rgb(235, 235, 30);" >Amarelo</li>
-      <li style="background-color:red " >Vermelho</li>
-      <li style="background-color:brown" >Marrom</li>
+    <ul class="bgstyle">
+      <li id="yellow">Amarelo</li>
+      <li id="red">Vermelho</li>
+      <li id="brown">Marrom</li>
     </ul>
 
 </body>
