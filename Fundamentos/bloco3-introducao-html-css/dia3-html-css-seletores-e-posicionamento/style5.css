@@ -1,0 +1,64 @@
+ol {
+    background-color: yellow;
+}
+
+.par {
+    color: green;
+}
+
+.impar {
+    text-transform: uppercase;
+}
+
+.header {
+    color: red;
+}
+
+.italico {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+.litalic {
+    font-weight: 900;
+}
+
+.lang {
+    color: blue;
+}
+
+.java {
+    background-color: pink;
+    margin-right: 1990px;
+}
+
+a:hover {
+    font-weight: 800;
+}
+
+a.trybe:hover {
+    background-color: green;
+    color:azure;
+}
+
+a.w3:hover {
+    background-color: green;
+    color:azure;
+}
+
+a.stack:hover {
+    background-color: orange;
+}
+
+a.mdn:hover {
+    background-color: black;
+    color: azure;
+}
+
+a.devdocs:hover {
+    background-color: yellow;
+}
