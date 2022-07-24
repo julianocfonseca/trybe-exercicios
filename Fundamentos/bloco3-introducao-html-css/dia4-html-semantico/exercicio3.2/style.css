@@ -1,0 +1,31 @@
+header {
+}
+
+#title {
+    width:100%;
+    text-align: center;
+
+}
+
+#article {
+    display: inline-block;
+    background-color: aqua;
+    border: 5px solid black;
+    width:50%;
+}
+
+#articl-title {
+    text-align: center;
+}
+
+aside {
+    position: fixed;
+    top:90px;
+    margin-left: 51%;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+}
+
