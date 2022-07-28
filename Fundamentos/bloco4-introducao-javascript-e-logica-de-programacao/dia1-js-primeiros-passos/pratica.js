@@ -106,10 +106,25 @@ if (number1 % 2 === 0 || number2 % 2 === 0 || number3 % 2 ===0) {
 
 // Exercício 9:
 
-const num1 = 5;
+const num1 = 4;
 const num2 = 6;
-const num3 = 3;
+const num3 = 2;
 
 if (num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !==0) {
     console.log('true')
 } else {console.log('false')}
+
+// Exercício 10:
+
+const custo = 50;
+const venda = 90;
+const imposto = custo * 0.2 
+
+if (custo < 0 || venda < 0){
+    console.log("Error")
+}
+const custoTotal = custo + imposto
+const lucro =  venda - custoTotal
+
+console.log('Lucro Total: ' + lucro*1000)
+
