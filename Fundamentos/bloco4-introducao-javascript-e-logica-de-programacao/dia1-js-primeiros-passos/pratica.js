@@ -54,3 +54,22 @@ let a3 = 70;
 if (a1 + a2 + a3 === 180) {
     console.log('true')
 } else {console.log('false')}
+
+// Exercício 6:
+
+let peça = 'QuEeN';
+let result = peça.toLowerCase()
+
+if (result === 'bishop') {
+    console.log('moves diagonally')
+} else if (result === 'queen') {
+    console.log('any number of unoccupied squares in a straight line vertically, horizontally, or diagonally')
+} else if (result === 'king') {
+    console.log('can move only one square in any direction, whether it is forward, backward, or sideways')
+} else if (result === 'pawn') {
+    console.log('moves directly forward, never backward or to the side')
+} else if (result === 'knight') {
+    console.log('either moves up or down one square vertically and over two squares horizontally OR up or down two squares vertically and over one square horizontally')
+} else if (result === 'rook') {
+    console.log('move forward, backward or sideways, but cannot move diagonally')
+}
