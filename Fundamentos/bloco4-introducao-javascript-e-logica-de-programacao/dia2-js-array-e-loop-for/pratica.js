@@ -40,3 +40,16 @@ for (let index = 0;index < numbers.length;index += 1) {
 
 console.log(maiorValor);
 
+// Exercício 6:
+
+let valoresImpares = 0;
+
+for (let index = 0;index < numbers.length;index += 1) {
+    if (numbers[index] % 2 !== 0) {
+        valoresImpares += 1;
+    } else if (valoresImpares === 0) {
+        console.log('nenhum valor ímpar encontrado');
+    }
+}    
+
+console.log(valoresImpares);
