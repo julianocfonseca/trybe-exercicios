@@ -18,5 +18,25 @@ console.log(soma);
 
 // Exercício 3:
 
-console.log(soma/numbers.length);
+let media = soma/numbers.length
+
+console.log(media);
+
+// Exercício 4:
+
+if (media > 20) {
+    console.log('valor maior que 20')
+} else {console.log('valor menor ou igual a 20')}
+
+// Exercício 5:
+
+let maiorValor = numbers[0];
+
+for (let index = 0;index < numbers.length;index += 1) {
+    if (numbers[index] > maiorValor) {
+        maiorValor = numbers[index];
+    }
+}
+
+console.log(maiorValor);
 
