@@ -53,3 +53,15 @@ for (let index = 0;index < numbers.length;index += 1) {
 }    
 
 console.log(valoresImpares);
+
+// Exercício 7:
+
+let menorValor = numbers[0];
+
+for (let index = 0;index < numbers.length;index += 1) {
+    if (numbers[index] < menorValor) {
+        menorValor = numbers[index];
+    }
+}
+
+console.log(menorValor);
