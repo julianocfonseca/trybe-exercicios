@@ -8,7 +8,15 @@ for (let numeros of numbers) {
 
 // Exercício 2:
 
-for (let index = 0;index < numbers.length;index +=1) {
-    let soma = number[index] + 0;
-    console.log(soma)
+let soma = 0;
+
+for (let index = 0;index < numbers.length;index += 1) {
+  soma += numbers[index]; 
 }
+
+console.log(soma);
+
+// Exercício 3:
+
+console.log(soma/numbers.length);
+
