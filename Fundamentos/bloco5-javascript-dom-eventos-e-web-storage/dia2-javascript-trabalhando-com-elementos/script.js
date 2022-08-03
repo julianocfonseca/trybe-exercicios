@@ -77,3 +77,46 @@ createLi = document.createElement('li');
 createLi.innerText = "dez";
 document.querySelector('.right-content ul').appendChild(createLi);
 
+// Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
+
+let element = document.createElement('h3');
+document.getElementsByTagName('main')[0].appendChild(element);
+document.getElementsByTagName('main')[0].appendChild(element);
+document.getElementsByTagName('main')[0].appendChild(element);
+
+// Adicione a classe title na tag h1 criada;
+
+element = document.getElementsByTagName('h1')[0];
+element.className = 'title';
+
+// Adicione a classe description nas 3 tags h3 criadas;
+
+element = document.getElementsByTagName('h3');
+for (let index in element) {
+    element[index].className = 'description';
+}
+
+// Remova a section criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
+
+element = document.getElementsByTagName('main')[0];
+let deletion = element.firstChild.nextSibling;
+element.removeChild(deletion);
+
+// Centralize a section criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto da section;
+
+element = document.getElementsByClassName('right-content')[0];
+element.style.marginRight = 'auto';
+
+// Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
+
+element = document.getElementsByClassName('center-content')[0].parentElement;
+element.style.background = 'pink';
+
+// Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
+
+element = document.querySelector('.right-content ul');
+deletion = element.lastChild;
+element.removeChild(deletion);
+deletion = element.lastChild;
+element.removeChild(deletion);
+
