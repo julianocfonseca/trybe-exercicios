@@ -40,8 +40,33 @@ addBoxText(input);
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
 
+function link () {
+    alert('Você será redirecionado para o meu linkedin, se conecte!')
+    window.location.replace('https://www.linkedin.com/in/julianofonseca17/')
+}
+
+function redirect (index) {
+    index.addEventListener('dblclick', link);
+}
+
+redirect(document.getElementById('my-spotrybefy'))
+
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+
+function changeColor (index) {
+    index.target.style.color = 'blue';
+}
+
+function resetColor (index) {
+    index.target.style.color = 'white';
+}
+
+function mouseOver (index) {
+    index.addEventListener('mouseover', changeColor);
+    index.addEventListener('mouseout', resetColor);
+}
+mouseOver(myWebpage)
 
 // Segue abaixo um exemplo do uso de event.target:
 
