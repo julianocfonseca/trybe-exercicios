@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <p>Informe dois números para realizar a soma:</p>
+    <label for="value1">Valor 1:</label>
+    <input type="text" id="value1" />
+    <label for="value2">Valor 2:</label>
+    <input type="text" id="value2" />
+    <button id="button">Somar</button>
+    <p id="result"></p>
+    <script>
+      // function sum() {
+      const value1 = document.getElementById("value1");
+      const value2 = document.getElementById("value2");
+      //   const result = Number(value1) + Number(value2);
+      //   document.getElementById('result').innerHTML = `Resultado: ${result}`;
+      //   document.getElementById('value1').value = '';
+      //   document.getElementById('value2').value = '';
+      // }
+
+      const verifyNumbers = (valor1, valor2) => {
+        if (isNaN(valor1) !== false || isNaN(valor2) !== false) {
+          throw new Error("Número Inválido");
+        } else if (valor1 === 0 || valor2 === 0) {
+          throw new Error("Pra que fazer uma soma com 0?");
+        }
+      };
+
+      const soma = () => {
+        try {
+          let valor1 = Number(value1.value);
+          let valor2 = Number(value2.value);
+          verifyNumbers(valor1, valor2);
+          const result = valor1 + valor2;
+          document.getElementById("result").innerHTML = `Resultado: ${result}`;
+        } catch (error) {
+          document.getElementById("result").innerHTML = `${error.message}`;
+          console.log(error);
+        } finally {
+          document.getElementById("value1").innerHTML = "";
+          document.getElementById("value2").innerHTML = "";
+        }
+      };
+
+      window.onload = () => {
+        const button = document.getElementById("button");
+        button.addEventListener("click", soma);
+      };
+    </script>
+  </body>
+</html>
