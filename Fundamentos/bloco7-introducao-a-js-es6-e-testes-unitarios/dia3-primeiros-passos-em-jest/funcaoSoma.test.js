@@ -1,4 +1,4 @@
-const sum = require('./funcaoSoma.js');
+const sum = require('./funcaoSoma');
 
 describe('Testa a funação soma', () => {
     it('A soma de 4 e 5 retorna 9', () => {
